@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+</head>
+<body>
+    <h1>JSON - FETCH </h1>
+    <a href="datos/espaciosnaturales.json" target="_blank">espacios naturales </a>
+    <p>Mira la consola del inspector de elementos para ver los datos (f12)</p>
+
+ <script>
+   fetch('datos/espaciosnaturales.json')
+  .then(response => response.text())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</script>   
+</body>
+</html>
+
