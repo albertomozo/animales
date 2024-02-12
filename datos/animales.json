@@ -1,0 +1,16 @@
+[
+	{
+		"id": 1,
+		"nombre": "Jabalí",
+		"cientifico": "suus scrofa",
+		"foto": "",
+		"familia": ""
+	},
+	{
+		"id": 2,
+		"nombre": "Mosquitero Ibérico",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	}
+]

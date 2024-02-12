@@ -30,6 +30,7 @@
         <section class="row" id="animales">
             <h2 class="align-center">Animales</h2>
             <!-- tabla animales -->
+
             <table class="table">
                 <thead>
                   <tr>
@@ -58,14 +59,18 @@
                 
                 </tbody>
               </table>
+              <div id="tablaanimales">
+                
+              </div>
         </section>
         <!-- seccion espacios -->
         <section class="row" id="espacios">
             <h2>Espacios Naturales</h2>
             <!-- contenedor galeria -->
-            <div class="row">
+            <div class="row" id="espacios_cards">
+                <!-- component card 
                 <div class="col-sm-4">
-                    <!-- component card -->
+                    
                     <div class="card">
                         <img src="https://fotoanimales.files.wordpress.com/2022/03/dsc00577-copia.jpg" class="card-img-top" alt="Imagen de Aiako Harriak">
                         <div class="card-body">
@@ -75,66 +80,18 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-sm-4">
-                    <!-- component card -->
-                    <div class="card">
-                        <img src="https://fotoanimales.files.wordpress.com/2022/02/img_3005-copia.jpg" class="card-img-top" alt="Imagen de cañon del rio Lobos">
-                        <div class="card-body">
-                          <h5 class="card-title">Cañon del rio Lobos</h5>
-                          <p class="card-text">El Cañón de Río Lobos es un Parque Natural constituido por un cañón de 25 km que discurre tanto por Soria como por Burgos. Este Cañón tiene unas paredes repletas de agujeros perfectas para todo tipo de aves rupícolas (Búhos Reales, Buitres Leonados, Alimoches, Chovas Piquirrojas, Vencejos…) y Cabras montesas. Los Bosques de Ribera del Cañón dan cobijo a muchas aves ribereñas (Petirrojos, Chochines…..)Los bosques que están en las laderas (Sabinas, Pinos) y las praderas hacen que sean comunes los Rabilargos, Corzos, Gatos Monteses, Garduñas, Tejones….. El Río habilita la presencia de Ratas de Agua, Nutrias y Martines Pescadores.</p>
-                          <a href="espacio_rio_lobos.html?id=2" class="btn btn-primary">Ver mas</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-4">
-                    <!-- component card -->
-                    <div class="card">
-                        <img src="https://fotoanimales.files.wordpress.com/2020/12/zaragoza-2.jpg" class="card-img-top" alt="Estepas de Belchite">
-                        <div class="card-body">
-                          <h5 class="card-title">Estepas de Belchite</h5>
-                          <p class="card-text">El paisaje de las estepas, está constituido por pequeñas colinas entre grandes planicies y de formaciones abruptas y bastante altas que muchas veces crean sucesiones de lomas en las que también se crean diminutos valles y cárcavas </p>
-                          <a href="espacio_belchite.html" class="btn btn-primary">Ver mas</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-4">
-                    <!-- component card -->
-                    <div class="card">
-                        <img src="https://fotoanimales.files.wordpress.com/2022/03/dsc00577-copia.jpg" class="card-img-top" alt="Imagen de Aiako Harriak">
-                        <div class="card-body">
-                          <h5 class="card-title">Aiako Harriak</h5>
-                          <p class="card-text">Mole Granitica de 800mts entre Gipuzkoa y Nafarroa.</p>
-                          <a href="espacio.html" class="btn btn-primary">Ver mas</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-4">
-                    <!-- component card -->
-                    <div class="card">
-                        <img src="https://fotoanimales.files.wordpress.com/2022/03/dsc00577-copia.jpg" class="card-img-top" alt="Imagen de Aiako Harriak">
-                        <div class="card-body">
-                          <h5 class="card-title">Aiako Harriak</h5>
-                          <p class="card-text">Mole Granitica de 800mts entre Gipuzkoa y Nafarroa.</p>
-                          <a href="espacio.html" class="btn btn-primary">Ver mas</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-4">
-                    <!-- component card -->
-                    <div class="card">
-                        <img src="https://fotoanimales.files.wordpress.com/2022/03/dsc00577-copia.jpg" class="card-img-top" alt="Imagen de Aiako Harriak">
-                        <div class="card-body">
-                          <h5 class="card-title">Aiako Harriak</h5>
-                          <p class="card-text">Mole Granitica de 800mts entre Gipuzkoa y Nafarroa.</p>
-                          <a href="espacio.html?id=3" class="btn btn-primary">Ver mas</a>
-                        </div>
-                      </div>
-                </div>
+              -->
+              
             </div>
         </section>
 
     </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./js/misscript.js"></script>
+    <script>
+       verEspaciosGaleria();
+    </script>
 </body>
 </html>
