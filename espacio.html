@@ -20,9 +20,45 @@
             <li class="nav-item"><a href="index.html#animales" class="nav-link">Animales</a></li>
             <li class="nav-item"><a href="index.html#espacios" class="nav-link">Espacios Naturales</a></li>
             </ul>
-        </header>
+        </header>  
+         <!-- fin header-->
         <h1>Espacios Naturales</h1>
-        <!-- fin header-->
+        <script src="js/misscript.js"></script>
+        <script>
+            console.log(location.href);
+            id = parseInt(location.href.split('?')[1].split('=')[1]); 
+            console.log(`id = ${id}`);
+            console.log(espacios)
+            //  datos generales del espacio 
+
+
+            // Buscar el espacio con id=id 
+            const espacioIden = espacios.find(item => item.id === id);
+
+            // Mostrar los datos si se encontró el espacio
+            if (espacioIden) {
+                console.log("Datos del espacio con id=:", id);
+                console.log("Nombre:", espacioIden.nombre);
+                console.log("Descripción:", espacioIden.descripcion);
+                console.log("Foto:", espacioIden.foto);
+                console.log("Localización:", espacioIden.localizacion);
+            } else {
+                console.log("No se encontró ningún espacio con id=1");
+            }
+
+            // datos del album con espacioId ) is
+
+            const albumId = album.find(item => item.espacioId === id);
+
+            if (albumId) {
+              console.log('albumId:', albumId);
+
+            }
+
+
+
+        </script>
+
        
 
     </div>

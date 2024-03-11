@@ -1,0 +1,17 @@
+{ 
+    "id":1,
+    "espacioId":1,
+    "titulo": "Viajes a Belchite ",
+    "fecha" : "2020-01-01",
+    "imagenes" : [
+        {
+            "foto": "url",
+            "fecha " : "2020-01-01",
+            "animalId" : 3,
+            "tituloImagen" :"Titulo imagen",
+            "descripcion" : "descripcion imagen"
+              
+        }
+    ]
+
+}

@@ -1,21 +1,16 @@
-# Título del Proyecto
-
-_Acá va un párrafo que describa lo que es el proyecto_
+# Fotoanimales. 
+Recopliación de las mejores fotografías obtenidas en espacion naturales. 
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+Puedes descargarte el codigo mediante un fichero zip o clonarlo mediante git clone
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
+No necesitas ninguna instalación previa, ya que el código es HTML, CSS y JS, usando Bootstarp 5.2
 
 ### Instalación 🔧
 
@@ -69,11 +64,11 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 ## Contribuyendo 🖇️
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+Por favor lee el [CONTRIBUTING.md](https://gist.github.com//xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
 ## Documentación 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [DOCUME]([https://github.com/tu/proyecto/wiki](https://docs.google.com/presentation/d/1-s_e2VvA9wr_X9mKkvmWS3pu7JkgkiisiZKfx4MAlno/edit?usp=sharing))
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [DOCUME]([Presentacion Google](https://docs.google.com/presentation/d/1-s_e2VvA9wr_X9mKkvmWS3pu7JkgkiisiZKfx4MAlno/edit?usp=sharing))
 
 ## Versionado 📌
 

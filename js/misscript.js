@@ -1,26 +1,60 @@
 console.log('📒 miscript.js');
 var espacios;
 var animales;
+var album;
+var vconfig;
 
-Promise.all([
-    fetch('datos/espaciosnaturales.json').then(response => response.json()),
-    fetch('datos/animales.json').then(response => response.json())
-])
-    .then(([espaciosData, animalesData]) => {
+const config = localStorage.getItem("config") ? JSON.parse(localStorage.getItem("config")) : null;
+
+
+
+const fechaActualizacion =  getFechaActualizacion()  
+console.log('Condiciones config : ' + config + '  fecha actualizacion ' + fechaActualizacion);
+
+if (config === null || fechaActualizacion === null || config.fecha_actualizacion <= fechaActualizacion ) {
+  Promise.all([
+        fetch('datos/espaciosnaturales.json').then(response => response.json()),
+        fetch('datos/animales.json').then(response => response.json()),
+        fetch('datos/album.json').then(response => response.json()),
+        fetch('datos/config.json').then(response => response.json())
+    ])
+    .then(([espaciosData, animalesData,albumData,configData]) => {
+        console.log(espaciosData);
         espacios = espaciosData;
         animales = animalesData;
-        document.getElementById('tablaanimales').innerHTML = veranimales();
+        album = albumData;
+        vconfig = configData;
+        localStorage.setItem('espacios', JSON.stringify(espacios));
+        localStorage.setItem('animales',  JSON.stringify(animales));
+        localStorage.setItem('album',  JSON.stringify(animales));
+        localStorage.setItem('config',  JSON.stringify(vconfig));
+
+        document.getElementById('tablaanimales').innerHTML = verAnimales();
         document.getElementById('espacios_cards').innerHTML = verEspaciosGaleria();
     })
-    .catch(error => console.error('Error:', error));
+    .catch(error => {console.error( error)});
 
-function veranimales() {
-    let res = `<table class="table"><thead>
+  } else { 
+      espacios = JSON.parse(localStorage.getItem('espacios'));
+      console.log('esp '+ espacios);
+      animales = JSON.parse(localStorage.getItem('animales'));
+      album = JSON.parse(localStorage.getItem('album'));
+      jconfig = JSON.parse(localStorage.getItem('config'));
+      console.log('📅 config ' + jconfig);
+   
+
+  }
+
+  //console.log('espacios ' + espacios)
+  
+function verAnimales() {
+    let res = `<h2 class="align-center">Animales</h2>
+    <table class="table"><thead>
       <tr>
         <th scope="col">#</th>
         <th scope="col">Nombre Comun </th>
-        <th scope="col">Descripción</th>
-        <th scope="col">Imagen</th>
+        <th scope="col">N. Cientifico</th>
+        <th scope="col">Familia</th>
         <th scope="col">enlace</th>
       </tr>
     </thead>
@@ -31,7 +65,7 @@ function veranimales() {
         res += '<tr>';
         res += '<th scope="row">' + animales[i].id + '</th>';
         res += '<td>' + animales[i].nombre + '</td>';
-        res += '<td>Thornton</td><td>@fat</td>';
+        res += '<td>' + animales[i].cientifico + '</td><td>' + animales[i].familia + '</td>';
         res += '<td><a href="animal.html?animal=' + animales[i].id + '">ficha</a></td>';
         res += '</tr>';
     }
@@ -47,7 +81,7 @@ function verEspaciosGaleria () {
   console.log('espacios ' + espacios.length)
   for (let i = 0; i < espacios.length; i++) { 
     console.log('paso ' + i ) ;
-    console.log(`espacio  ${espacios[i].nombre} `) ;
+    //console.log(`espacio  ${espacios[i].nombre} `) ;
     res1 += ' <div class="col-sm-4">';
     res1 += '<!-- component card -->';
     res1 += '<div class="card">'; 
@@ -64,6 +98,22 @@ function verEspaciosGaleria () {
   return res1;
 
 }
+
+
+function   getFechaActualizacion() {
+  console.log(`▶ getFechaActualizacion`);
+  return fetch('datos/config.json')
+          .then(response => response.json())
+          .then(data => {
+              console.log(`respuesta  ${data.fecha_actualizacion}`);
+              return data.fecha_actualizacion;
+          })
+          .catch(error => {
+              console.error(`Ha ocurrido un error (${error.message})`);
+              return null;
+          });
+}
+
 
 
 /* document.getElementById('tablaanimales').innerHTML = veranimales();

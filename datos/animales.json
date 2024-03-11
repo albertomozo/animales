@@ -4,7 +4,7 @@
 		"nombre": "Jabalí",
 		"cientifico": "suus scrofa",
 		"foto": "",
-		"familia": ""
+		"familia": "mamifero"
 	},
 	{
 		"id": 2,
@@ -12,5 +12,19 @@
 		"cientifico": "",
 		"foto": "",
 		"familia": "aves"
-	}
+	},
+	{
+		"id": 3,
+		"nombre": "Abejaruco",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 4,
+		"nombre": "corzo",
+		"cientifico": "capreolus",
+		"foto": "",
+		"familia": "ungulado"
+		}
 ]
