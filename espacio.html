@@ -28,12 +28,14 @@
             console.log(location.href);
             id = parseInt(location.href.split('?')[1].split('=')[1]); 
             console.log(`id = ${id}`);
-            console.log(espacios)
-            //  datos generales del espacio 
+            let espacios2=JSON.parse(localStorage.getItem('espacios'));
+            console.log(`espacios2 = ${espacios2}`);
+            let album2=JSON.parse(localStorage.getItem('album'));
+            //  datos generales del espacio     
 
 
             // Buscar el espacio con id=id 
-            const espacioIden = espacios.find(item => item.id === id);
+            const espacioIden = espacios2.find(item => item.id === id);
 
             // Mostrar los datos si se encontró el espacio
             if (espacioIden) {
@@ -44,16 +46,16 @@
                 console.log("Localización:", espacioIden.localizacion);
             } else {
                 console.log("No se encontró ningún espacio con id=1");
-            }
+            } 
 
             // datos del album con espacioId ) is
+            const elementosFiltrados = album2.filter(item => item.espacioId === id);
 
-            const albumId = album.find(item => item.espacioId === id);
+            console.log('filtro ' + elementosFiltrados);
 
-            if (albumId) {
-              console.log('albumId:', albumId);
-
-            }
+            const albumId = album2.find(item => item.espacioId == id);
+            console.log(albumId);
+           
 
 
 

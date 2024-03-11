@@ -26,11 +26,8 @@ if (config === null || fechaActualizacion === null || config.fecha_actualizacion
         vconfig = configData;
         localStorage.setItem('espacios', JSON.stringify(espacios));
         localStorage.setItem('animales',  JSON.stringify(animales));
-        localStorage.setItem('album',  JSON.stringify(animales));
+        localStorage.setItem('album',  JSON.stringify(album));
         localStorage.setItem('config',  JSON.stringify(vconfig));
-
-        document.getElementById('tablaanimales').innerHTML = verAnimales();
-        document.getElementById('espacios_cards').innerHTML = verEspaciosGaleria();
     })
     .catch(error => {console.error( error)});
 
@@ -48,6 +45,7 @@ if (config === null || fechaActualizacion === null || config.fecha_actualizacion
   //console.log('espacios ' + espacios)
   
 function verAnimales() {
+    let animales = JSON.parse(localStorage.getItem('animales'));
     let res = `<h2 class="align-center">Animales</h2>
     <table class="table"><thead>
       <tr>
@@ -77,6 +75,7 @@ function verAnimales() {
 function verEspaciosGaleria () {
   
   var res1;
+  let espacios=JSON.parse(localStorage.getItem('espacios'));
   res1 = '<h5>Espacios</h5>';
   console.log('espacios ' + espacios.length)
   for (let i = 0; i < espacios.length; i++) { 
@@ -116,9 +115,7 @@ function   getFechaActualizacion() {
 
 
 
-/* document.getElementById('tablaanimales').innerHTML = veranimales();
 
-document.getElementById('espacios_cards').innerHTML = verEspaciosGaleria(); */
 
 
 

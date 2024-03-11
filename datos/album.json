@@ -1,17 +1,69 @@
-{ 
-    "id":1,
-    "espacioId":1,
-    "titulo": "Viajes a Belchite ",
-    "fecha" : "2020-01-01",
-    "imagenes" : [
-        {
-            "foto": "url",
-            "fecha " : "2020-01-01",
-            "animalId" : 3,
-            "tituloImagen" :"Titulo imagen",
-            "descripcion" : "descripcion imagen"
-              
-        }
-    ]
+[
+    { 
+        "id":1,
+        "espacioId":2,
+        "titulo": "Viaje a Belchite",
+        "fecha" : "2020-01-01",
+        "imagenes" : [
+            {
+                "foto": "https://fotoanimales.files.wordpress.com/2022/02/img_4141-copia-1.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 5,
+                "tituloImagen" :"Conejos en ruinas",
+                "descripcion" : ""
+                
+            },
+            {
+                "foto": "https://fotoanimales.files.wordpress.com/2020/12/zorro_estepa_3.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 6,
+                "tituloImagen" :"Zorro en la estepa",
+                "descripcion" : "Por las numerosa lomas un zorro buscaba conejos, estaba en una hondonada buscando madriguera cuando le sorprendimos"
+                
+            },
+            {
+                "foto": "https://fotoanimales.files.wordpress.com/2022/02/img_4338-copia-1.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 2,
+                "tituloImagen" :"Mosquitero Iberico",
+                "descripcion" : "Una especie inusual en esta zona ya de que prefiere bosques húmedo, seguramente habitara en los bosques de tamarindos."
+                
+            },
+            
+            {
+                "foto": "https://fotoanimales.files.wordpress.com/2020/12/cabras_estepas_4.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 8,
+                "tituloImagen" :"Cabra Montesa",
+                "descripcion" : "Las cabras entre las lomas bajan a comer a los campos de cultivo. En este caso son un grupo de tres cabras hembra."
+                
+            }
+        ]
 
-}
+    },
+    { 
+        "id":2,
+        "espacioId":1,
+        "titulo": "Rio Lobos",
+        "fecha" : "2020-01-01",
+        "imagenes" : [
+            {
+                "foto": "https://fotoanimales.files.wordpress.com/2023/02/img_3072buitre-copia-1.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 7,
+                "tituloImagen" :"Buitres ",
+                "descripcion" : ""
+                
+            },
+            {
+                "foto": "https://fotoanimales.files.wordpress.com/2022/02/img_3165_cabra-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 8,
+                "tituloImagen" :"Cabra Montesa",
+                "descripcion" : "Las Cabras Montesas no son un animal fijo en el cañón teniendo sólo un pequeño grupo de ellas, viniendo estas del ambiente de la Sierra de Cabrejas. En el cañón las Cabras suelen estar en los cresterías del cañón, Alimentado se de la abundante vegetación."
+                
+            }
+        ]
+
+    }
+]

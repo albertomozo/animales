@@ -26,5 +26,34 @@
 		"cientifico": "capreolus",
 		"foto": "",
 		"familia": "ungulado"
-		}
+	},
+	{
+		"id": 5,
+		"nombre": "conejo",
+		"cientifico": "",
+		"foto": "",
+		"familia": "mamifero"
+	},
+	{
+		"id": 6,
+		"nombre": "zorro",
+		"cientifico": "vulpes",
+		"foto": "",
+		"familia": "mamifero"
+	},
+	{
+		"id": 7,
+		"nombre": "Buitre Leonado",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 8,
+		"nombre": "Cabra Montesa",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	}
+
 ]
