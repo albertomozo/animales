@@ -1,0 +1,59 @@
+[
+	{
+		"id": 1,
+		"nombre": "Jabalí",
+		"cientifico": "suus scrofa",
+		"foto": "",
+		"familia": "mamifero"
+	},
+	{
+		"id": 2,
+		"nombre": "Mosquitero Ibérico",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 3,
+		"nombre": "Abejaruco",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 4,
+		"nombre": "corzo",
+		"cientifico": "capreolus",
+		"foto": "",
+		"familia": "ungulado"
+	},
+	{
+		"id": 5,
+		"nombre": "conejo",
+		"cientifico": "",
+		"foto": "",
+		"familia": "mamifero"
+	},
+	{
+		"id": 6,
+		"nombre": "zorro",
+		"cientifico": "vulpes",
+		"foto": "",
+		"familia": "mamifero"
+	},
+	{
+		"id": 7,
+		"nombre": "Buitre Leonado",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 8,
+		"nombre": "Cabra Montesa",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	}
+
+]
