@@ -3,6 +3,10 @@ var espacios;
 var animales;
 var album;
 var vconfig;
+var IconoFamilia = new Array;
+// defininicion de los iconos para cada familia 
+IconoFamilia['aves']='aves-svgrepo-com.svg';
+IconoFamilia['mamifero']='mamiferos-svgrepo-com.svg';
 
 const config = localStorage.getItem("config") ? JSON.parse(localStorage.getItem("config")) : null;
 

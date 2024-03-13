@@ -22,19 +22,10 @@
             <li class="nav-item"><a href="index.html#espacios" class="nav-link">Espacios Naturales</a></li>
             </ul>
         </header>
-        <seccion class="container" id="espacionatural">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="https://fotoanimales.files.wordpress.com/2020/12/zaragoza-2.jpg" class="card-img-top" alt="Estepas de Belchite">
-                </div>
-                <div class="col-sm-6">
-                    El paisaje de las estepas, está constituido por pequeñas colinas entre grandes planicies y de formaciones abruptas y bastante altas que muchas veces crean sucesiones de lomas en las que también se crean diminutos valles y cárcavas 
-                </div>
-        
+        <section class="container" id="espacionatural">
 
-            </div>
             <!-- animales de la estepa -->
-            <div >
+            <!-- <div >
                 <h3>Animales</h3>
                 <div class="row">
                     <div class="col-md-4">
@@ -102,23 +93,27 @@
 
                 </div>
             </div>
-
+ -->
       
 
 
 
 
-        </seccion>
+        </section>
 
        
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/misscript.js"></script>
+    <script src="js/animales.js"></script>
     <script>
         console.log(location.href);
-        id = parseInt(location.href.split('?')[1].split('=')[1]); 
+        //id = parseInt(location.href.split('?')[1].split('=')[1]); 
+        var id = location.href.includes('?') ? parseInt(location.href.split('?')[1].split('=')[1]) : null;
         console.log(`id = ${id}`);
+
         let espacios2=JSON.parse(localStorage.getItem('espacios'));
         console.log(`espacios2 = ${espacios2}`);
         let album2=JSON.parse(localStorage.getItem('album'));
@@ -127,7 +122,7 @@
 
         // Buscar el espacio con id=id 
         const espacioIden = espacios2.find(item => item.id === id);
-
+        let textResp = '';
         // Mostrar los datos si se encontró el espacio
         if (espacioIden) {
             console.log("Datos del espacio con id=:", id);
@@ -135,7 +130,23 @@
             console.log("Descripción:", espacioIden.descripcion);
             console.log("Foto:", espacioIden.foto);
             console.log("Localización:", espacioIden.localizacion);
+           
+            textResp +=`<div class="row">
+                <div class="col-sm-6">
+                    <img src="${espacioIden.foto}" class="card-img-top" alt="${espacioIden.nombre}">
+                </div>
+                <div class="col-sm-6">
+                    ${espacioIden.descripcion} 
+                </div>
+        
+
+            </div>`;
+
+
+
+
         } else {
+            texResp =  `<p>No hay espacio natural con id ${id}`;
             console.log("No se encontró ningún espacio con id=1");
         } 
 
@@ -145,7 +156,54 @@
         console.log('filtro ' + elementosFiltrados);
 
         const albumId = album2.find(item => item.espacioId == id);
+        if (albumId ===undefined){
+            textResp +=`No hay album para el id ${id}`;
+        } else {
         console.log(albumId);
+
+      
+        textResp +=`<div >
+        <h3>Animales</h3>
+        <div class="row">`;
+        imagenes=albumId.imagenes;
+
+        for (const imagen of imagenes)
+        {
+            const animales = JSON.parse(localStorage.getItem('animales'));
+            
+            const nombreAnimal=animales.find(item => item.id === imagen.animalId).nombre;
+            console.log (getAnimalProp(imagen.animalId, 'familia'));
+            console.log (`🔲 ${imagen}`)
+            /* obtener icono de animales */
+            //  funcion o metodo  
+        
+                textResp +=` 
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="${imagen.foto}" class="card-img-top" alt="imagen de ${nombreAnimal}">
+                        
+                            <div class="card-body">
+                                <h5 class="card-title"><img src="img/iconos/${getAnimalIcono(imagen.animalId)}" class="animalIcon"> ${nombreAnimal} - ${getAnimalProp(imagen.animalId, 'cientifico')}</h5>
+                                <p>${imagen.descripcion}</p>
+                                
+                                
+                                <a href="#" class="btn btn-primary">Ver Animal</a>
+                            </div>
+                        </div>
+                    </div> 
+                    `
+
+        }  
+        textResp +=`</div></div >`;
+        
+               
+
+        
+
+
+    }
+
+        document.getElementById('espacionatural').innerHTML=textResp; 
        
 
 
