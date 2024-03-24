@@ -2,6 +2,7 @@ console.log('📒 miscript.js');
 var espacios;
 var animales;
 var album;
+var videosyoutube;
 var vconfig;
 var IconoFamilia = new Array;
 // defininicion de los iconos para cada familia 
@@ -20,17 +21,20 @@ if (config === null || fechaActualizacion === null || config.fecha_actualizacion
         fetch('datos/espaciosnaturales.json').then(response => response.json()),
         fetch('datos/animales.json').then(response => response.json()),
         fetch('datos/album.json').then(response => response.json()),
+        fetch('datos/videosyoutube.json').then(response => response.json()),
         fetch('datos/config.json').then(response => response.json())
     ])
-    .then(([espaciosData, animalesData,albumData,configData]) => {
+    .then(([espaciosData, animalesData,albumData,youtubeData,configData]) => {
         console.log(espaciosData);
         espacios = espaciosData;
         animales = animalesData;
         album = albumData;
+        videosyoutube = youtubeData
         vconfig = configData;
         localStorage.setItem('espacios', JSON.stringify(espacios));
         localStorage.setItem('animales',  JSON.stringify(animales));
         localStorage.setItem('album',  JSON.stringify(album));
+        localStorage.setItem('videosyoutube',  JSON.stringify(videosyoutube));
         localStorage.setItem('config',  JSON.stringify(vconfig));
     })
     .catch(error => {console.error( error)});
@@ -40,6 +44,7 @@ if (config === null || fechaActualizacion === null || config.fecha_actualizacion
       console.log('esp '+ espacios);
       animales = JSON.parse(localStorage.getItem('animales'));
       album = JSON.parse(localStorage.getItem('album'));
+      videosyoutube = JSON.parse(localStorage.getItem('videosyoutube'));
       jconfig = JSON.parse(localStorage.getItem('config'));
       console.log('📅 config ' + jconfig);
    

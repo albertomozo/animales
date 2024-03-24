@@ -4,14 +4,22 @@
 		"nombre" : "cañon del rio Lobos",
 		"descripcion" : "es un Parque Natural constituido por un cañón de 25 km que discurre tanto por Soria como por Burgos.",
 		"foto" : "https://fotoanimales.files.wordpress.com/2022/02/img_3005-copia.jpg",
-		"localizacion" : "Soria Burgos"
+		"localizacion" : "Soria Burgos",
+		"latitud":	41.77577,
+		"longitud":	-3.03449,
+		"googlemaps" : "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d91721.41199752373!2d-3.1063127275998563!3d41.79063357505719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1711271455200!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+		"info" : {
+
+		}
 	},
 	{
 		"id":2,
 		"nombre" : "Estepas de Belchite",
 		"descripcion" : "El paisaje de las estepas, está constituido por pequeñas colinas entre grandes planicies y de formaciones abruptas y bastante altas que muchas veces crean sucesiones de lomas en las que también se crean diminutos valles y cárcavas ",
 		"foto" : "https://fotoanimales.files.wordpress.com/2020/12/zaragoza-2.jpg",
-		"localizacion" : "Zaragoza"
+		"localizacion" : "Zaragoza",
+		"latitud":	41.37445,
+		"longitud":	-0.63979
 
 	},
 	{
@@ -19,7 +27,20 @@
 		"nombre" : "Albarracín",
 		"descripcion" : "Albarracín aparte de su fama paleontológica y cultural también tiene una rica fauna. Además de sus característicos extensos bosques de pino, también están presentes las abundantes parameras del sistema ibérico en zonas más bajas, Seguidos por sabinares, Encinares y finalmente Campos de cultivo. Esta sierra tiene además bastantes nacederos de río por lo que la sierra esta repleta de agua, esto a su vez crea numerosos cortados y cañones.",
 		"foto" : "https://fotoanimales.files.wordpress.com/2020/12/dsc01776albarracin-copia.jpg?",
-		"localizacion" : "Teruel"
+		"localizacion" : "Teruel",
+		"latitud":	40.44833,
+		"longitud":	-1.65198
+
+	},
+	{
+		"id":4,
+		"nombre" : "Sierra de la Culebra",
+		"descripcion" : "La Sierra de la Culebra es una sierra del noroeste de Zamora que está pegando con Portugal. En está sierra aparte de una rica población de ungulados, está la mayor concentración de lobo ibérico de la península, aunque el bosque sea de reforestación en su gran mayoría en algunas zonas hay robledales salvaje. grandes extensiones de brezo y en algunas zonas dehesas. Está sierra es pedregosa en las puntas, habilitando las presencias de las rapaces. Además de los ungulados y el Lobo en esta sierra también son comunes los Zorros, Nutrias, Gatos monteses y Liebres.",
+		"foto" : "https://fotoanimales.files.wordpress.com/2020/12/sierra_-de_-la_culebra-1.jpg",
+		"localizacion" : "Zamora",
+		"latitud":	41.98163,
+		"longitud":	 -6.41229,
+		"googlemaps": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d129466.53864005016!2d-6.403226113824015!3d41.91261516365809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd39861b5183404d%3A0xfae7a1070497fd43!2sSierra%20de%20la%20Culebra!5e1!3m2!1ses!2ses!4v1711284433606!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
 
 	}
 ]

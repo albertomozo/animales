@@ -117,12 +117,14 @@
         let espacios2=JSON.parse(localStorage.getItem('espacios'));
         console.log(`espacios2 = ${espacios2}`);
         let album2=JSON.parse(localStorage.getItem('album'));
-        //  datos generales del espacio     
+        //  datos generales del espacio   
+        let videosyoutube2 =JSON.parse(localStorage.getItem('videosyoutube'));  
 
 
         // Buscar el espacio con id=id 
         const espacioIden = espacios2.find(item => item.id === id);
         let textResp = '';
+        let textYT ='';
         // Mostrar los datos si se encontró el espacio
         if (espacioIden) {
             console.log("Datos del espacio con id=:", id);
@@ -142,6 +144,13 @@
 
             </div>`;
 
+             //localizacion
+             textMapa = '';
+             if (espacioIden.googlemaps) {textMapa = espacioIden.googlemaps;}
+             //textMapa = `<iframe src="https://www.google.com/maps/@${espacioIden.latitud},${espacioIden.longuitud},21063m/data=!3m1!1e3?entry=ttu"></iframe>`;
+             //textMapa=''
+            
+
 
 
 
@@ -153,58 +162,108 @@
         // datos del album con espacioId ) is
         const elementosFiltrados = album2.filter(item => item.espacioId === id);
 
-        console.log('filtro ' + elementosFiltrados);
+        console.log('filtro ');
+        console.log(elementosFiltrados);
 
         const albumId = album2.find(item => item.espacioId == id);
-        if (albumId ===undefined){
+        if (albumId === undefined){
             textResp +=`No hay album para el id ${id}`;
         } else {
-        console.log(albumId);
+            console.log(albumId);
+
+        
+            textResp +=`<div >
+            <h3>Animales</h3>
+            <div class="row">`;
+            imagenes=albumId.imagenes;
+
+            for (const imagen of imagenes)
+            {
+                const animales = JSON.parse(localStorage.getItem('animales'));
+                
+                const nombreAnimal=animales.find(item => item.id === imagen.animalId).nombre;
+                console.log (getAnimalProp(imagen.animalId, 'familia'));
+                console.log (`🔲 ${imagen}`)
+                /* obtener icono de animales */
+                //  funcion o metodo  
+            
+                    textResp +=` 
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="${imagen.foto}" class="card-img-top" alt="imagen de ${nombreAnimal}">
+                            
+                                <div class="card-body">
+                                    <h5 class="card-title"><img src="img/iconos/${getAnimalIcono(imagen.animalId)}" class="animalIcon"> ${nombreAnimal} - ${getAnimalProp(imagen.animalId, 'cientifico')}</h5>
+                                    <p>${imagen.descripcion}</p>
+                                    
+                                    
+                                    <a href="#" class="btn btn-primary">Ver Animal</a>
+                                </div>
+                            </div>
+                        </div> 
+                        `;
+
+            }  
+            textResp +=`</div></div >`;
+
+           
+                
+
+            
+
+
+        }
+        
+      // video de canal youtube
+      // datos del album con espacioId ) is
+        const videosyt = videosyoutube2.filter(item => item.espacioId === id);
+
+        console.log('filtro ' + elementosFiltrados);
+    
+        const listaYt = videosyoutube2.find(item => item.espacioId == id);
+        if (listaYt === undefined){
+            textYT +=`No VIDEOS PARA  ${id}`;
+        } else {
+
+            console.log( listaYt);
+
+
+            textYT +=`<div >
+            <h3>Lista Youtube</h3>
+            <div class="row">`;
+            
+
+            for (const video of videosyt)
+            {              
+            
+                    textYT +=`<div class="col-md-6"><div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${video.videoid}" title="Fototrampeo Sierra de Albarracín parte 4. Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>`;   
+                    
+             
+             
+          
+
+
+
+            }       
+            //textYT +=`</div></div >`;
+        }
+        textResp += textMapa + textYT;
+        document.getElementById('espacionatural').innerHTML=textResp; 
 
       
-        textResp +=`<div >
-        <h3>Animales</h3>
-        <div class="row">`;
-        imagenes=albumId.imagenes;
+                
 
-        for (const imagen of imagenes)
-        {
-            const animales = JSON.parse(localStorage.getItem('animales'));
             
-            const nombreAnimal=animales.find(item => item.id === imagen.animalId).nombre;
-            console.log (getAnimalProp(imagen.animalId, 'familia'));
-            console.log (`🔲 ${imagen}`)
-            /* obtener icono de animales */
-            //  funcion o metodo  
-        
-                textResp +=` 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="${imagen.foto}" class="card-img-top" alt="imagen de ${nombreAnimal}">
-                        
-                            <div class="card-body">
-                                <h5 class="card-title"><img src="img/iconos/${getAnimalIcono(imagen.animalId)}" class="animalIcon"> ${nombreAnimal} - ${getAnimalProp(imagen.animalId, 'cientifico')}</h5>
-                                <p>${imagen.descripcion}</p>
-                                
-                                
-                                <a href="#" class="btn btn-primary">Ver Animal</a>
-                            </div>
-                        </div>
-                    </div> 
-                    `
-
-        }  
-        textResp +=`</div></div >`;
-        
-               
-
-        
 
 
-    }
 
-        document.getElementById('espacionatural').innerHTML=textResp; 
-       
+
+
+
+
+    
+       //reproductor= `<iframe width="971" height="546" src="https://www.youtube.com/embed/3w-qWvJ8GrA?list=PLwOZM06kLKi2GLEYg7aAPK3kZx5NpG_cO" title="Fototrampeo Sierra de Albarracín parte 3. Cabras montesas!!!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> ` ;     
 
 
 
