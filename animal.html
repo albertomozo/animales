@@ -25,7 +25,10 @@
        
         <!-- fin header-->
         <section class="container" id="animal">
-        
+       
+        </section>
+        <section class="container" id="animalesEspacio">
+
         </section>
 
         
@@ -37,8 +40,25 @@
     <script src="js/animales.js"></script>
     <script>
         var id = location.href.includes('?') ? parseInt(location.href.split('?')[1].split('=')[1]) : null;
-        let textAnimal = `<div>Nombre : ${getAnimalProp (id, 'nombre')}</div>`;
+        let textAnimal = `<ul><li>Nombre : ${getAnimalProp (id, 'nombre')}</li>`;
+        textAnimal += `<li>Cientifico : ${getAnimalProp (id, 'cientifico')}</li>`
+        textAnimal += `<li>Familia : ${getAnimalProp (id, 'familia')}</li>`;
+        textAnimal += '</ul>';
+
         document.getElementById('animal').innerHTML=textAnimal; 
+
+        let textAnimalEspacio ='<h2>Fotos de Animales</h2>';
+    
+        animalesAlbum = getAnimalAlbum(id);
+        for (const animal of animalesAlbum){
+            textAnimalEspacio +='<ul>';
+            for(const [key, value] of Object.entries(animal)){
+                textAnimalEspacio += `<li>${key} : ${value}</li>`;
+            }
+            textAnimalEspacio +='</ul>';
+        }
+
+        document.getElementById('animalesEspacio').innerHTML=textAnimalEspacio; 
 
     </script>
 
