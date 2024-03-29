@@ -8,93 +8,19 @@
     <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
     <div class="container">
         <!-- header -->
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-            <span class="fs-4">Simple header</span>
-            </a>
-    
-            <ul class="nav nav-pills">
-            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="index.html#animales" class="nav-link">Animales</a></li>
-            <li class="nav-item"><a href="index.html#espacios" class="nav-link">Espacios Naturales</a></li>
-            </ul>
+            
         </header>
         <section class="container" id="espacionatural">
 
-            <!-- animales de la estepa -->
-            <!-- <div >
-                <h3>Animales</h3>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./img/animales/mosquitero_iberico.webp" class="card-img-top" alt="mosquitero iberico.">
-                        
-                            <div class="card-body">
-                                <h5 class="card-title"><img src="img/iconos/aves-svgrepo-com.svg" class="animalIcon"> Mosquitero Iberico</h5>
-                                <p>Descripcion</p>
-                                
-                                
-                                <a href="#" class="btn btn-primary">Ver Animal</a>
-                            </div>
-                        </div>
-                    </div> 
-
-                
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./img/animales/mosquitero_iberico.webp" class="card-img-top" alt="mosquitero iberico.">
-                        
-                            <div class="card-body">
-                                <h5 class="card-title"><img src="img/iconos/aves-acuaticas-svgrepo-com.svg" class="animalIcon">Mosquitero Iberico</h5>
-                                
-                                <a href="#" class="btn btn-primary">detalle</a>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./img/animales/mosquitero_iberico.webp" class="card-img-top" alt="mosquitero iberico.">
-                        
-                            <div class="card-body">
-                                <h5 class="card-title"><img src="img/iconos/mamiferos-svgrepo-com.svg" class="animalIcon"> mamifero Mosquitero Iberico</h5>
-                                
-                                <a href="#" class="btn btn-primary">detalle</a>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./img/animales/mosquitero_iberico.webp" class="card-img-top" alt="mosquitero iberico.">
-                        
-                            <div class="card-body">
-                                <h5 class="card-title">Mosquitero Iberico</h5>
-                                
-                                <a href="#" class="btn btn-primary">detalle</a>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./img/animales/mosquitero_iberico.webp" class="card-img-top" alt="mosquitero iberico.">
-                        
-                            <div class="card-body">
-                                <h5 class="card-title">Mosquitero Iberico</h5>
-                                
-                                <a href="#" class="btn btn-primary">detalle</a>
-                            </div>
-                        </div>
-                    </div> 
-
-                </div>
-            </div>
- -->
-      
+            
 
 
 
@@ -106,6 +32,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/cabecera.js"></script>
     <script src="js/misscript.js"></script>
     <script src="js/animales.js"></script>
     <script>
@@ -146,7 +73,15 @@
 
              //localizacion
              textMapa = '';
-             if (espacioIden.googlemaps) {textMapa = espacioIden.googlemaps;}
+             if (espacioIden.googlemaps) {
+                textMapa = ` <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <!-- Aquí puedes incrustar el iframe -->
+                <div id="map-container">${espacioIden.googlemaps}
+                
+                </div></div></div></div>`;
+            }
              //textMapa = `<iframe src="https://www.google.com/maps/@${espacioIden.latitud},${espacioIden.longuitud},21063m/data=!3m1!1e3?entry=ttu"></iframe>`;
              //textMapa=''
             
@@ -197,7 +132,7 @@
                                     <p>${imagen.descripcion}</p>
                                     
                                     
-                                    <a href="#" class="btn btn-primary">Ver Animal</a>
+                                    <a href="animal.html?id=${imagen.animalId}" class="btn btn-primary">Ver Animal</a>
                                 </div>
                             </div>
                         </div> 

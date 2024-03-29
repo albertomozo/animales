@@ -62,5 +62,108 @@
 		"foto": "",
 		"familia": "mamifero"
 	}
+	,
+	{
+		"id": 10,
+		"nombre": "Perdices",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 11,
+		"nombre": "Rana",
+		"cientifico": "",
+		"foto": "",
+		"familia": "anfibios"
+	},
+	{
+		"id": 12,
+		"nombre": "Rata de agua",
+		"cientifico": "",
+		"foto": "",
+		"familia": "mamifero"
+	},
+	{
+		"id": 13,
+		"nombre": "Cangrejo",
+		"cientifico": "",
+		"foto": "",
+		"familia": "crustaceo"
+	},
+	{
+		"id": 14,
+		"nombre": "Alimoche",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 15,
+		"nombre": "Grulla",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 16,
+		"nombre": "Avutarda",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 17,
+		"nombre": "Aguilucho Cenizo",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	}
+	,
+	{
+		"id": 18,
+		"nombre": "Busardo ratonero",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 19,
+		"nombre": "Aguila Calzada",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 20,
+		"nombre": "Lagarto Ocelado",
+		"cientifico": "",
+		"foto": "",
+		"familia": "reptiles"
+	},
+	
+	{
+		"id": 21,
+		"nombre": "Pico Picapinos",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 22,
+		"nombre": "Garza Real",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 23,
+		"nombre": "Aves acuaticas",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	}
+
+
 
 ]

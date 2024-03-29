@@ -42,5 +42,27 @@
 		"longitud":	 -6.41229,
 		"googlemaps": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d129466.53864005016!2d-6.403226113824015!3d41.91261516365809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd39861b5183404d%3A0xfae7a1070497fd43!2sSierra%20de%20la%20Culebra!5e1!3m2!1ses!2ses!4v1711284433606!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
 
+	},
+	{
+		"id":5,
+		"nombre" : "Lagunas de Villafafila",
+		"descripcion" : "Villafafila es una llanura de campos de cultivo que tiene lagunas estacionales. Al contrario de la culebra está al este de Zamora pegando con Valladolid. En Villafafila además de las aves acuáticas que vienen a las lagunas cuando están llenas, hay muchas aves esteparias, Aguiluchos Cenizos, Laguneros y Pálidos también hay Cernícalos de los dos tipos y las Avutardas son fáciles de ver.",
+		"foto" : "https://fotoanimales.files.wordpress.com/2020/12/avutardas_5.jpg",
+		"localizacion" : "Zamora",
+		"latitud":	41.98163,
+		"longitud":	 -6.41229,
+		"googlemaps": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d129466.53864005016!2d-6.403226113824015!3d41.91261516365809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd39861b5183404d%3A0xfae7a1070497fd43!2sSierra%20de%20la%20Culebra!5e1!3m2!1ses!2ses!4v1711284433606!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+
+	},
+	{
+		"id":6,
+		"nombre" : "Gallocanta",
+		"descripcion" : "Esta laguna situada entre Teruel y Zaragoza es una laguna estacional endorreica, rodeada por campos de cultivo y bosques de dehesas. Este ambiente es perfecto para las Grullas este siendo su zona de paso mas utilizada en España. También en la laguna y sus alrededores son posibles de ver otros tipos de aves acuáticas como Garzas, Fochas, Somormujos, y aves esteparias como Avutardas, Sisones o Cernícalos. No hay una laguna por esa zona, hay otras más pequeñas dispersas, estas sirven para dar cobijo a aún más aves.",
+		"foto" : "https://fotoanimales.wordpress.com/wp-content/uploads/2022/02/dsc02798-copia.jpg",
+		"localizacion" : "Zaragoza Teruel",
+		"latitud":	40.9679114,
+		"longitud":	 -1.4905139,
+		"googlemaps": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62510.14183047187!2d-1.4905139187697218!3d40.967911367555594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1711708979546!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+
 	}
 ]

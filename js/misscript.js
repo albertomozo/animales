@@ -10,10 +10,16 @@ IconoFamilia['aves']='aves-svgrepo-com.svg';
 IconoFamilia['mamifero']='mamiferos-svgrepo-com.svg';
 
 const config = localStorage.getItem("config") ? JSON.parse(localStorage.getItem("config")) : null;
-
+// Mostrar mensaje de carga
+// Aquí puedes agregar tu lógica para mostrar una imagen animada de carga
+// Por ejemplo, podrías agregar un elemento HTML que contenga la imagen animada de carga y mostrarlo en el DOM
+// Puedes darle un id para poder ocultarlo posteriormente
+const loaderElement = document.getElementById('loader');
+loaderElement.style.display = 'block'; // Mostrar el elemento de carga
 
 
 const fechaActualizacion =  getFechaActualizacion()  
+console.log('📅'+fechaActualizacion);
 console.log('Condiciones config : ' + config + '  fecha actualizacion ' + fechaActualizacion);
 
 if (config === null || fechaActualizacion === null || config.fecha_actualizacion <= fechaActualizacion ) {
@@ -36,6 +42,9 @@ if (config === null || fechaActualizacion === null || config.fecha_actualizacion
         localStorage.setItem('album',  JSON.stringify(album));
         localStorage.setItem('videosyoutube',  JSON.stringify(videosyoutube));
         localStorage.setItem('config',  JSON.stringify(vconfig));
+        // Ocultar mensaje de carga después de cargar los archivos JSON
+        loaderElement.style.display = 'none'; // Ocultar el elemento de carga
+        location.ref = location.href;
     })
     .catch(error => {console.error( error)});
 
@@ -47,6 +56,8 @@ if (config === null || fechaActualizacion === null || config.fecha_actualizacion
       videosyoutube = JSON.parse(localStorage.getItem('videosyoutube'));
       jconfig = JSON.parse(localStorage.getItem('config'));
       console.log('📅 config ' + jconfig);
+      // Ocultar mensaje de carga si los datos se cargaron desde el almacenamiento local
+     loaderElement.style.display = 'none'; // Ocultar el elemento de carga
    
 
   }
@@ -84,6 +95,7 @@ function verAnimales() {
 function verEspaciosGaleria () {
   
   var res1;
+  console.log(localStorage.getItem('espacios'));
   let espacios=JSON.parse(localStorage.getItem('espacios'));
   res1 = '<h5>Espacios</h5>';
   console.log('espacios ' + espacios.length)
@@ -110,9 +122,10 @@ function verEspaciosGaleria () {
 
 function   getFechaActualizacion() {
   console.log(`▶ getFechaActualizacion`);
-  return fetch('datos/config.json')
+   fetch('datos/config.json')
           .then(response => response.json())
           .then(data => {
+              console.log('data ' + data);
               console.log(`respuesta  ${data.fecha_actualizacion}`);
               return data.fecha_actualizacion;
           })
