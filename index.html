@@ -18,39 +18,44 @@
            
         </header>
         <!-- fin header-->
-        <!-- presentacion Imagen y spot -->
-        <section class="row" id="presentacion">
-            <h2>Presentacion</h2>
-        </section>
-         <!-- seccion animales  -->
-        <section class="row" id="animales">
-            
-            <!-- tabla animales -->
-              <div id="tablaanimales">
-                
-              </div>
-        </section>
         <!-- seccion espacios -->
         <section class="row" id="espacios">
-            <h2>Espacios Naturales</h2>
-            <!-- contenedor galeria -->
-            <div class="row" id="espacios_cards">
-                <!-- component card 
-                <div class="col-sm-4">
-                    
-                    <div class="card">
-                        <img src="https://fotoanimales.files.wordpress.com/2022/03/dsc00577-copia.jpg" class="card-img-top" alt="Imagen de Aiako Harriak">
-                        <div class="card-body">
-                          <h5 class="card-title">Aiako Harriak</h5>
-                          <p class="card-text">Mole Granitica de 800mts entre Gipuzkoa y Nafarroa.</p>
-                          <a href="espacio_aia.html" class="btn btn-primary">Ver mas</a>
-                        </div>
-                      </div>
+            <h2>Fotos de Fauna Iberica y lugares para verla</h2>
+            <!-- carrousel -->
+             <!-- Aquí puedes poner el contenido principal de tu página -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <!-- Los indicadores del carrusel se agregarán dinámicamente con JavaScript -->
+                </ol>
+                <div class="carousel-inner">
+                    <!-- Los elementos del carrusel se agregarán dinámicamente con JavaScript -->
                 </div>
-              -->
-              
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
             </div>
+            <!-- fin carrousel -->
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
+        <footer>
+
+        </footer>
 
     </div>
     
@@ -58,10 +63,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="js/cabecera.js"></script>
     <script src="./js/misscript.js"></script>
-    <script>
-       document.getElementById('espacios_cards').innerHTML=verEspaciosGaleria();
-       document.getElementById('tablaanimales').innerHTML=verAnimales();
-
-    </script>
+    <script src="./js/carrousel.js"></script>
 </body>
 </html>
