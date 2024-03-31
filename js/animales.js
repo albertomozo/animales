@@ -1,65 +1,44 @@
+function getAnimalProp (id, prop) {
+    //console.log(`animali ${id}`);
+    const animales = JSON.parse(localStorage.getItem('animales'));
+    return animales.find(item => item.id === id)[prop];
+}
 
-let animalesJSON = JSON.parse(localStorage.getItem('animales'));
+function getAnimalIcono(id) {
+    let familia=getAnimalProp(id, 'familia');
+    console.log(` familia en get : ${familia} de id : ${id}`);
+    if (IconoFamilia[familia]) {
+        return IconoFamilia[familia];
+    } else {
+        return 'piggy-bank-svgrepo-com.svg';
+    }
+}
 
-// Array para almacenar los datos transformados
-var animalesTransformados = [];
-
-// Recorrer el JSON original y transformar los datos
-animalesJSON.forEach(function(animal) {
-    var fila = [
-        animal.nombre || "",
-        animal.cientifico || "",
-        animal.familia || "",
-        `<a href="animal.html?id=${animal.id}">ficha</a>` || ""
-    ];
-    animalesTransformados.push(fila);
-});
-console.log(animalesTransformados);
-
-new gridjs.Grid({
-  columns :[
-    { name: "Nombre", formatter: (cell) => gridjs.html(cell) },
-    { name: "Cientifico", formatter: (cell) => gridjs.html(cell) },
-    { name: "Family", formatter: (cell) => gridjs.html(cell) },
-    { name: "Ficha", formatter: (cell) => gridjs.html(cell) }
-  ],
-    data: animalesTransformados,
-    search : true,
-    sort: true
-  }).render(document.getElementById("wrapper"));
-
-  // version html 
-
- /*  animalesJSON.forEach(function(animal) {
-    var fila = [
-        animal.nombre || "",
-        animal.cientifico || "",
-        animal.familia || ""
-       
-    ];
-    animalesTransformados.push(fila);
-});
-
-  new gridjs.Grid({
-    columns: [
-        { 
-          name: 'Nombre',
-          formatter: (cell) => html(`<b>${cell}</b>`)
-        },
-        { 
-            name: 'Cientifico',
-            formatter: (cell) => html(`<b>${cell}</b>`)
-        },
-        { 
-            name: 'Familia',
-            formatter: (cell) => html(`<b>${cell}</b>`)
-          },
-        'Ficha',
-        { 
-          name: 'ficha',
-          formatter: (_, row) => html(`<a href="animal.htm?id=${animal.id}">ficha</a>`)
+function getAnimalAlbum(id){
+    const albumes = JSON.parse(localStorage.getItem('album'));
+    var respuesta = new Array();
+    for (const album of albumes)
+    {
+         console.log(album);
+         const imagenesAlbum  = album.imagenes.filter(imagen => imagen.animalId === id);
+         //console.log(imagenesAlbum);
+         if (imagenesAlbum){
+         for (const imagenAlbum of imagenesAlbum)
+         {
+            console.log(album.espacioId,album.titulo);
+            //console.log(imagenAlbum);
+            console.log(imagenAlbum.foto);
+            let imagenAlbum2=imagenAlbum;
+            imagenAlbum2.espacioId = album.espacioId;
+            imagenAlbum2.titulo = album.titulo;
+            respuesta.push(imagenAlbum2);
+         }
         }
-     ],
-    data: animalesTransformados
-  }).render(document.getElementById('#wrapper')); */
+       
+         
+    }
+    return respuesta;
+   
+
+}
  
