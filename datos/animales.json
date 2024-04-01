@@ -162,7 +162,130 @@
 		"cientifico": "",
 		"foto": "",
 		"familia": "aves"
+	},
+	{
+		"id": 24,
+		"nombre": "Garza Imperial",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 25,
+		"nombre": "Flamenco",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 26,
+		"nombre": "Cigueñelas",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 27,
+		"nombre": "Moritos",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 28,
+		"nombre": "Aguilucho Lagunero",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 29,
+		"nombre": "Pato colorado",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 30,
+		"nombre": "Tarro Blanco",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{
+		"id": 31,
+		"nombre": "Zampullin comun",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{	
+		"id": 32,
+		"nombre": "Somormujo",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{	
+		"id": 33,
+		"nombre": "Avocetas",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{	
+		"id": 34,
+		"nombre": "Avocetas",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{	
+		"id": 35,
+		"nombre": "Calamon",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{	
+		"id": 36,
+		"nombre": "Calamon",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{	
+		"id": 37,
+		"nombre": "Martinete",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{	
+		"id": 38,
+		"nombre": "Charran",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{	
+		"id": 39,
+		"nombre": "Focha",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
+	},
+	{	
+		"id": 40,
+		"nombre": "Gallineta",
+		"cientifico": "",
+		"foto": "",
+		"familia": "aves"
 	}
+
+
+
+
 
 
 

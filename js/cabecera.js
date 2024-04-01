@@ -46,7 +46,8 @@ document.querySelector('footer').innerHTML = `
 
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2024 Copyright:
-    <a class="text-reset fw-bold" href="https://fotoanimales.wordpress.com">fotoanimales</a>
+    <a class="text-reset fw-bold" href="https://fotoanimales.wordpress.com">fotoanimales</a> 
+    version : <span class="text-reset fw-bold">1.0</span>
   </div>
 </div>
 `;

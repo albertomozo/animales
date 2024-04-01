@@ -295,6 +295,160 @@
             }
         ]
 
+    },
+    {
+        "id":7,
+        "espacioId":7,
+        "titulo": "Delta del Ebro",
+        "fecha" : "2020-01-01",
+        "imagenes" : [
+            {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-garza-real-8-09920-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 22,
+                "tituloImagen" :"Garza real ",
+                "descripcion" : "Las Garzas Reales aunque son menos vistosas que las Imperiales y son más comunes también son unas majestuosas aves, estas mantienen unas preferencias a las Imperiales aunque estas se adaptan a cualquier zona húmeda."
+  
+                
+            },
+            {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-garza-imperial-6-09672-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 24,
+                "tituloImagen" :"Garza Imperial",
+                "descripcion" : "Las Grullas son sin ninguna duda la especie insignia de la Laguna de Gallocanta. Son sencillas de ver tanto alimentándose en los campos a primera y última hora de la mañana, tanto como en las orillas de la laguna o volando de sus comederos a dormideros. Dentro de los bosques de carrizos y eneas que rodean las lagunas la Garza Imperial encuentra un hábitat idóneo, en el Delta estos bosques son muy abundante por consecuente las Garzas son muy abundantes."
+                
+            },
+            {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/02/dsc02700-copia.jpg?w=2500&h=https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-flamenco-17-08870-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 25,
+                "tituloImagen" :"Flamencos",
+                "descripcion" :"El animal insignia del Delta, esta ave encuentra en la Península Ibérica una de sus mayores poblaciones en el Delta. Es fácil ver a los Flamencos en grupos en las lagunas poco profundas, también se les ve volar"
+                
+            }
+            ,
+            {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-cigunuela-12-09181-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 26,
+                "tituloImagen" :"cigueñelas",
+                "descripcion" :"Esta pequeña ave, es una especialista de charcas de muy poca profundidad, encontrando en los arrozales, acequias y lagunas muy poco profundas del Delta un Hábitat ideal."
+                
+            },
+            
+            {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-morito-20-09099-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 27,
+                "tituloImagen" :"Moritos",
+                "descripcion" :"El único Ibis Español, Los Moritos se ven en los arrozales cuando se alimentan o volando hacia sus dormideros ubicados en medio de los carrizales."
+                
+            } ,
+            {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-aguilucho-lagunero-8-09064-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 28,
+                "tituloImagen" :"Aguilucho Lagunero",
+                "descripcion" :"Esta rapaz actúa como la super predadora del Delta manteniendo a raya las poblaciones de patos y otras aves acuáticas."
+                
+            },
+            {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-pato-colorado-108725-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 29,
+                "tituloImagen" :"Pato Colorado",
+                "descripcion" :"En lagunas un poco más profundas y en el cauce principal del Ebro son fáciles de ver anatidas que necesitan aguas profundas como los Patos colorado o Porrones."
+                
+            },
+            {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-detla-del-ebro-tarro-blanco-2-09942-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 30,
+                "tituloImagen" :"Tarro Blanco",
+                "descripcion" :"Está ave no es muy común en España siendo el Delta uno de los puntos más importantes de la especie, le gustan las aguas profundas con vegetación en la que esconderse."
+                
+            },
+            {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-zampullin-1-09729-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 31,
+                "tituloImagen" :"Zampullin común",
+                "descripcion" :"Pequeña ánatida buceadora que viven en lagunas y zonas de agua en general de una profundidad considerable que sea de más de medio metro de profundo, le gustan las zonas con abundante vegetación en las orillas donde esconderse."
+                
+            },
+             {
+                "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-somormujo-7-09245-copia.jpg",
+                "fecha " : "2020-01-01",
+                "animalId" : 32,
+                "tituloImagen" :"Somormujo",
+                "descripcion" :"Está ave buceadora de preciosos colores es muy común en el Delta dado a sus lagunas cauces de ríos y acequias profundas con pescado. "
+                
+            },
+            {
+               "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-avoceta-108853-copia.jpg?w=2500",
+               "fecha " : "2020-01-01",
+               "animalId" : 33,
+               "tituloImagen" :"Avocetas",
+               "descripcion" :"Está ave buceadora de preciosos colores es muy común en el Delta dado a sus lagunas cauces de ríos y acequias profundas con pescado. "
+               
+           },
+           {
+              "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-avoceta-108853-copia.jpg?w=2500",
+              "fecha " : "2020-01-01",
+              "animalId" : 34,
+              "tituloImagen" :"Avocetas",
+              "descripcion" :"Estas aves fácil confundible con las Cigüeñuelas son muy comunes en el delta. "
+              
+          },
+          {
+             "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-calamon-11-09304-copia.jpg",
+             "fecha " : "2020-01-01",
+             "animalId" : 35,
+             "tituloImagen" :"Calamon",
+             "descripcion" :"El Calamón encuentra en el Delta uno de los mayores refugios, El Delta tiene una importante población de esta escasa ave a la que le gustan las lagunas con abundante vegetación palustre, también se ve en acequias y canales. "
+             
+         },
+         {
+            "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-garceta-15-09981-copia.jpg",
+            "fecha " : "2020-01-01",
+            "animalId" : 36,
+            "tituloImagen" :"Garceta",
+            "descripcion" :"La más adaptable de las garzaS. No le hace falta los humedales (aunque los prefiera) ya de que se la puede ver en diferentes ambientes, sobre todo en praderas ganaderas."
+            
+        },        
+         {
+            "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-martinete-5-09982-copia.jpg",
+            "fecha " : "2020-01-01",
+            "animalId" : 37,
+            "tituloImagen" :"Martinete",
+            "descripcion" :"Esta Garza también necesita abundante vegetación en las que esconderse alrededor del agua y a poder ser elije zonas alejadas."
+        }
+        ,        
+         {
+            "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-charran-9-09252-copia.jpg",
+            "fecha " : "2020-01-01",
+            "animalId" : 38,
+            "tituloImagen" :"Charran",
+            "descripcion" :"Esta ave es otro de los emblemas del Delta siendo muy común y fácil de ver."
+        }
+        ,        
+        {
+           "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-focha-208789-copia.jpg",
+           "fecha " : "2020-01-01",
+           "animalId" : 39,
+           "tituloImagen" :"Focha",
+           "descripcion" :"Muy común en todos los humedales esta ave negra y blanca se ve en todo tipo de lagunas, sobre todo en zonas de profundidad media. "
+       } ,        
+       {
+          "foto": "https://fotoanimales.wordpress.com/wp-content/uploads/2022/04/dsc-delta-del-ebro-gallinea-5-09087-copia.jpg",
+          "fecha " : "2020-01-01",
+          "animalId" : 40,
+          "tituloImagen" :"Gallineta",
+          "descripcion" :"Más pequeña que su prima la focha esta ave es más discreta y le gustan las zonas con vegetación cerca del agua."
+      }
+        ]
+
     }
 
 

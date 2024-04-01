@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (carouselInner) {
         // Obtener los datos del localStorage y convertirlos a objetos JavaScript
         var lugares = JSON.parse(localStorage.getItem('espacios'));
+        function comparacionAleatoria() {
+            return 0.5 - Math.random();
+        }
+        
+        // Ordenar aleatoriamente el array de lugares
+        lugares.sort(comparacionAleatoria);
 
         // Recorrer los lugares y crear los elementos del carrusel
         lugares.forEach(function(lugar, index) {

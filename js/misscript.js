@@ -110,6 +110,7 @@ function verEspaciosGaleria () {
     res1 +=  `    <h5 class="card-title">${espacios[i].nombre}</h5>`;
     res1 +=  `    <p class="card-text">${espacios[i].descripcion}</p>`;
     res1 +=  `   <a href="espacio.html?id=${espacios[i].id}" class="btn btn-primary">Ver mas</a>`;
+    res1 +=  `   <a href="${espacios[i].fotoanimales}" target="_blank">fotoanimales</a>`;
     res1 +=  `  </div>`;
     res1 +=  `</div>`;
     res1 +=  `</div>`;
