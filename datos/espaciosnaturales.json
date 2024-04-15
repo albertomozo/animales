@@ -96,5 +96,18 @@
 		"fotoanimales" :"https://fotoanimales.wordpress.com/leon-2/"
 		
 		
+	},
+	{
+		"id":9,
+		"nombre" : "Monfrague",
+		"descripcion" : " se masifiquen de gente. En estás montañas hay varias zonas de reserva en las que esta prohibida la entrada. El embalse del Riaño crea un paisaje idílico al que se denomina como los fiordos leoneses, pero este embalse tiene un turbio pasado de protestas y manifestaciones y de pueblos desaparecidos y privados de sus tierras. Desde el punto de vista ecológico estas montañas son uno de los mejores lugares españoles para disfrutar de la fauna de montaña. En estas recónditas montañas habitan dos de los últimos grandes representantes de la fauna cantábrica los Osos que encuentran aquí una de las zonas más importantes de su población oriental y el urogallo cantábrico que esta al borde de la extinción. Estas montaña están cubiertas por masas de roble, haya, matorral y en pequeñas zonas pinares. Los prados de siega tienen un valor ecológico especial porque son los mejores sitios de España para ver Gato montés. Entre la fauna de alta montaña destacan los Rebecos y Cabras montesas. En los bosques los Ciervos, Jabalís, Corzos, Lobos, Zorros, Martas, Corzos son abundantes. En el agua se pueden encontrar Nutrias.",
+		"foto" : "https://fotoanimales.wordpress.com/wp-content/uploads/2023/04/img_0181-copia.jpg",
+		"localizacion" : "Caceres",
+		"latitud":	40.714788438251034, 
+		"longitud":	 0.639786345062217,
+		"googlemaps": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80865.55691988106!2d-5.061068241188611!3d42.96494329630969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd48296e361d25f7%3A0xfc362a8823ae022d!2zMjQ5MDAgUmlhw7FvLCBMZcOzbg!5e0!3m2!1ses!2ses!4v1711956699844!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+		"fotoanimales" :"https://fotoanimales.wordpress.com/leon-2/"
+		
+		
 	}
 ]
